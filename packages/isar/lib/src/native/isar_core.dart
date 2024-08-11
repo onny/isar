@@ -222,8 +222,9 @@ extension on Abi {
       case Abi.macosArm64:
       case Abi.macosX64:
         return 'libisar_macos.dylib';
+      case Abi.linuxArm64:
       case Abi.linuxX64:
-        return 'libisar_linux_x64.so';
+        return 'libisar.so';
       case Abi.windowsArm64:
         return 'isar_windows_arm64.dll';
       case Abi.windowsX64:
